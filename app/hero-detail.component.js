@@ -10,6 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var hero_1 = require('./hero');
+/* Modesto */
 var HeroDetailComponent = (function () {
     function HeroDetailComponent() {
     }
