@@ -20,6 +20,10 @@ var routes = [
     {
         path: 'hero/:id',
         component: hero_detail_component_1.HeroDetailComponent
+    },
+    {
+        path: 'detail/:id',
+        component: hero_detail_component_1.HeroDetailComponent
     }
 ];
 exports.appRouterProviders = [
