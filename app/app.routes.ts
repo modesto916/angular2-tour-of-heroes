@@ -18,7 +18,7 @@ const routes: RouterConfig = [
         component: HeroesComponent
     },
     {
-        path: '/hero/:id',
+        path: 'hero/:id',
         component: HeroDetailComponent
     }
 ];

@@ -18,7 +18,7 @@ var routes = [
         component: heroes_component_1.HeroesComponent
     },
     {
-        path: '/hero/:id',
+        path: 'hero/:id',
         component: hero_detail_component_1.HeroDetailComponent
     }
 ];
