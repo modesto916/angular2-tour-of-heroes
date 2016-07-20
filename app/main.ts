@@ -5,5 +5,6 @@ import { AppComponent } from './app.component';
 import { appRouterProviders } from './app.routes';
 
 bootstrap(AppComponent, [
-    appRouterProviders
+    appRouterProviders,
+    HTTP_PROVIDERS
 ]);
