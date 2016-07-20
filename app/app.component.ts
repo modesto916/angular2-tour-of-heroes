@@ -1,27 +1,23 @@
 import { Component } from '@angular/core';
+import { ROUTER_DIRECTIVES } from '@angular/router';
+import { HeroService } from './hero.service';
 
-export class Hero {
-    id: number;
-    name: string;
-}
 
 @Component({
     selector: 'my-app',
-    template: `<h1>{{title}}</h1>
-    <h2>{{hero.name}} details!</h2>
-    <div>
-        <label>id:</label>{{hero.id}}
-    </div>
-    <div>
-        <label>name: </label>
-        <input [(ngModel)]="hero.name" placeholder="name" />
-    </div>`
+    template: `
+        <h1>{{title}}</h1>
+        <nav>
+            <a [routerLink]="['/dashboard']">Dashboard</a>
+            <a [routerLink]="['/heroes']">Heroes</a>
+        </nav>
+        <router-outlet></router-outlet>
+    `,
+    directives: [ROUTER_DIRECTIVES],
+    providers: [
+        HeroService
+    ]
 })
 export class AppComponent {
     title = 'Tour of Heroes';
-    hero : Hero = {
-        id: 1,
-        name: "Windstorm"
-    };
-}
-
+};
